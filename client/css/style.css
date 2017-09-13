@@ -3,25 +3,28 @@ body {
 }
 #logoheader {
     margin: auto;
-    height: 200px;
+    height: 100px;
     width: 280px;
     text-align: center;
+    font-family: "Saturday Nights";
 }
+
 .imagefood {
     height: 100px;
     width: 100px;
 }
 
 h2 {
-    color: blueviolet;
     font-weight: bold;
-    font-family: Waree;
-    text-decoration: underline;
-    text-decoration-style: double;
+    font-family: "Saturday Nights";
+    color: blueviolet;
     text-decoration-color: black;
     background-color: #865C6C;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+h3 {
+    color: #BB6688;
 }
 .dropdown-toggle {
     font-weight: bold;
@@ -37,10 +40,10 @@ h2 {
     border-color: black;
 }
 .btn-primary:hover {
-    color: #BB6688;
-    background-color: white;
-    border-color: black;
     font-weight: bold;
+    color: #BB6688;
+    border-color: black;
+    background-color: white;
 }
 .pull-right {
     color: #BB6688;
@@ -52,33 +55,35 @@ h2 {
     color: #BB6688;
 }
 .inputcompt{
-    color: black;
-    text-align: center;
     width: 80px;
     height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background: red;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    background: red;
-    font-weight: bold;
 }
 .navbar-header {
     color: darkred;
     font-weight: bold;
 }
 .commander {
-    color: deeppink;
-    text-align: center;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
     float: right;
+    height: 50px;
     margin-bottom: 10px;
     margin-top: 10px;
+    color: deeppink;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
     background: white;
-    font-weight: bold;
+    border-color: black;
 }
 .box{
+    font-family: Loma;
     color: darkviolet;
 }

@@ -96,7 +96,7 @@ if (Categories.find().count() === 0) {
         },
         {
             image: "b4.png",
-            name: "Le tête de lard",
+            name: "La tête de lard",
             description: "Du lard paysan toasté délicatement posée sur du cheddar fondu et une viande de boeuf limousine, c’est du velours ! Mais alors quand on y ajoute quelques rondelles de tomate, de la roquette et une sauce béarnaise, là je vous le dis : cette Tête de lard, c’est de l’art ! ",
             price: 12
         },
