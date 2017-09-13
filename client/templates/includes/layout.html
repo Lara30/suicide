@@ -1,0 +1,12 @@
+<template name="layout">
+    <form>
+        <div class="container">
+            {{> logo}}
+            {{> header}}
+            {{> yield}}
+        <input class="commander" type="submit" name="commander" value="Valider la commande">
+        </div>
+    </form>
+</template>
+<!--le layout est comme un cadre pour les données, contenant tout le code html qui entoure les templates et qui
+ne bougera pas même si le template lui-même est modifié!-->

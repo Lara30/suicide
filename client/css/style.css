@@ -1,0 +1,84 @@
+body {
+    background-color: lightpink;
+}
+#logoheader {
+    margin: auto;
+    height: 200px;
+    width: 280px;
+    text-align: center;
+}
+.imagefood {
+    height: 100px;
+    width: 100px;
+}
+
+h2 {
+    color: blueviolet;
+    font-weight: bold;
+    font-family: Waree;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: black;
+    background-color: #865C6C;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dropdown-toggle {
+    font-weight: bold;
+}
+.dropdown-menu {
+    background-color: purple;
+}
+.row {
+    background-image: url("thumb-1920-519509.jpg");
+}
+.btn-primary {
+    background-color: #BB6688;
+    border-color: black;
+}
+.btn-primary:hover {
+    color: #BB6688;
+    background-color: white;
+    border-color: black;
+    font-weight: bold;
+}
+.pull-right {
+    color: #BB6688;
+}
+.form-control {
+    border-color: #BB6688;
+}
+.pull-left {
+    color: #BB6688;
+}
+.inputcompt{
+    color: black;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background: red;
+    font-weight: bold;
+}
+.navbar-header {
+    color: darkred;
+    font-weight: bold;
+}
+.commander {
+    color: deeppink;
+    text-align: center;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: white;
+    font-weight: bold;
+}
+.box{
+    color: darkviolet;
+}
