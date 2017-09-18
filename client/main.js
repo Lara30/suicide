@@ -24,3 +24,11 @@ Template.hello.events({
       alert();
     },*/
 });
+Template.panier.events({
+    'submit .compteur'(event) {
+      event.preventDefault();
+      this.name=name;
+      this.image=image;
+      this.price=price;
+    }
+});

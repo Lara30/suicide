@@ -1,0 +1,15 @@
+<template name="paniers">
+<form>
+    <div class="container">
+        <div class="content">
+            <h2>Votre commande</h2>
+            {{#each paniers}}
+            <h3>{{name}}</h3>
+            <h2>{{price}}€</h2>
+            <img class="imagefood" src="/{{image}}">
+            {{/each}}
+        </div>
+        <input class="retour" type="submit" name="retour" value="Retour">
+    </div>
+</form>
+</template>
