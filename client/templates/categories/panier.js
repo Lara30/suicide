@@ -2,13 +2,13 @@ Meteor.subscribe("paniers");
 
 Template.paniers.helpers({
     paniers: function() {
-        return Paniers.find();
+        return Panier.find();
     }
 });
 Template.boissons.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        Paniers.insert({
+        Panier.insert({
             name:this.name,
             price:this.price,
             image:this.image
@@ -17,18 +17,22 @@ Template.boissons.events({
 });
 Template.burgers.events({
     'submit .formulaire'(event){
+
         event.preventDefault();
-        Paniers.insert({
+
+        Panier.insert({
             name:this.name,
             price:this.price,
-            image:this.image
+            image:this.image,
+            compteur:this.compteur
         });
+        target.compteur.value=this.compteur;
     },
 });
 Template.desserts.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        Paniers.insert({
+        Panier.insert({
             name:this.name,
             price:this.price,
             image:this.image
@@ -38,7 +42,7 @@ Template.desserts.events({
 Template.pizzas.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        Paniers.insert({
+        Panier.insert({
             name:this.name,
             price:this.price,
             image:this.image
@@ -48,7 +52,7 @@ Template.pizzas.events({
 Template.salades.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        Paniers.insert({
+        Panier.insert({
             name:this.name,
             price:this.price,
             image:this.image

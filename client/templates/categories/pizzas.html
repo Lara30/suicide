@@ -7,7 +7,7 @@
                     <h2>PIZZAS</h2>
                     <!-- afin de récupérer le login rentré on met cette ligne pour
                   montrer que l'utilisateur est toujours connecté!-->
-                    {{> loginButtons}}
+                    <!--{{> loginButtons}}-->
 
                     {{#each pizzas}}
                     <form class="formulaire" method="post">
@@ -16,9 +16,9 @@
                         <img class="imagefood" src="/{{image}}">
                         <input class="inputcompteur" name="compteur" type="number" min="0" max="99" value="0">
                         <input class="commander" type="submit" name="commander" value="valider">
-                        <hr>
                     </form>
                     {{/each}}
+
                 </div>
             </div>
         </div>

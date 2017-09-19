@@ -1,7 +1,6 @@
 Meteor.subscribe("categories");
 
-Template.categories.helpers({
-    categories: function() {
-        return Categories.find();
-    }
+Template.categorie.helpers({
+    categorie: function() {
+        return Categories.find()}
 });

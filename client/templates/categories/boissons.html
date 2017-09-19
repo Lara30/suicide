@@ -3,18 +3,16 @@
         <div class="row">
             <div class="box col-xs-10 text-center col-sm-6 text-center col-md-4 text-center">
                 <div class="content">
-
                     <h2>BOISSONS</h2>
                     <!-- afin de récupérer le login rentré on met cette ligne pour
                     montrer que l'utilisateur est toujours connecté!-->
-                    {{> loginButtons}}
-
+                    <!--{{> loginButtons}}-->
                     {{#each boissons}}
                     <form class="formulaire" method="post">
-                    <h3>{{name}}</h3>
-                    <h2>{{price}}€</h2>
-                    <img class="imagefood" src="/{{image}}">
-                    <input class="inputcompteur" name="compteur" type="number" min="0" max="99" value="0">
+                        <h3>{{name}}</h3>
+                        <h2>{{price}}€</h2>
+                        <img class="imagefood" src="/{{image}}">
+                        <input class="inputcompteur" name="compteur" type="number" min="0" max="99" value="0">
                         <input class="commander" type="submit" name="commander" value="valider">
                     <hr>
                     </form>

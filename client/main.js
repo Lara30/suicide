@@ -24,6 +24,8 @@ Template.hello.events({
       alert();
     },*/
 });
+//on applique au template panier un événement au submit du bouton compteur
+//qui récupère le nom, l'image et le prix
 Template.panier.events({
     'submit .compteur'(event) {
       event.preventDefault();

@@ -1,11 +1,12 @@
 <template name="layout">
     <form>
         <div class="container">
-            {{> logoh}}
-            {{> logop}}
+            {{> logoheader}}
             {{> header}}
             {{> yield}}
-        <input class="commander" type="submit" name="commander" value="Valider la commande">
+            <a class="comd" href="{{pathFor 'paniers'}}">
+                <input class="commander" type="submit" name="commander" value="Valider la commande">
+            </a>
         </div>
     </form>
 </template>

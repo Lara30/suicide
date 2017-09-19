@@ -8,6 +8,13 @@ body {
     text-align: center;
     font-family: "Saturday Nights";
 }
+.container.text-center {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: white;
+
+}
 
 .imagefood {
     height: 100px;
@@ -34,7 +41,9 @@ h3 {
 }
 .row {
     background-image: url("thumb-1920-519509.jpg");
+    opacity:0.8;
 }
+
 .btn-primary {
     background-color: #BB6688;
     border-color: black;
@@ -65,9 +74,9 @@ h3 {
     border: none;
     border-radius: 5px;
 }
-.navbar-header {
-    color: darkred;
+nav.navbar.navbar-default {
     font-weight: bold;
+    background-color: #EC008C;
 }
 .commander {
     float: right;
@@ -86,4 +95,7 @@ h3 {
 .box{
     font-family: Loma;
     color: darkviolet;
+}
+#logop {
+    background-color: darkred;
 }
