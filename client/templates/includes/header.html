@@ -7,15 +7,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{pathFor 'categorie'}}">Accueil</a>
+            <a class="navbar-brand" href="{{pathFor 'categorie'}}"><h4>Accueil</h4></a>
         </div>
 
         <div class="collapse navbar-collapse" id="navigation">
-            <ul class="nav navbar-nav navbar-right">
-                {{> loginButtons}}
+            <span class="nav navbar-nav navbar-right">
+                <h4>{{> loginButtons}}</h4>
                 <a href="/panier"> <img id="logop" src="./TC_Icons_ShoppingCart_PINK.jpg" width="60" height="60">
-                Votre panier</a>
-            </ul>
+                    <h4>Votre panier</h4></a>
+            </span>
         </div>
     </nav>
 </template>

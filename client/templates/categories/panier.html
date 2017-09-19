@@ -1,17 +1,16 @@
 <template name="paniers">
-<form>
-    <div class="container">
-        <div class="content">
-            <h2>Votre commande</h2>
+<form class="totalcommande">
+    <div class="content">
+        <h2>Votre commande</h2>
 
-            {{#each paniers}}
-            <h3>{{compteur}} {{name}}{{price}}€</h3>
-            <img class="imagefood" src="/{{image}}">
-            {{/each}}
-        </div>
+        {{#each paniers}}
+        <h3>{{compteur}} {{name}} à {{price}}€</h3>
+        <p>Votre total : {{total}}€</p>
+        <img class="imagefood" src="/{{image}}">
+        {{/each}}
+        <a class="retour" href="{{pathFor 'categorie'}}">
+            <input type="submit" name="retour" value="Retour">
+        </a>
     </div>
-    <a class="retour" href="{{pathFor 'categorie'}}">
-         <input type="submit" name="retour" value="Retour">
-    </a>
 </form>
 </template>

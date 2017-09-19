@@ -13,14 +13,11 @@ body {
     padding-bottom: 30px;
     width: 100%;
     background-color: white;
-
 }
-
 .imagefood {
     height: 100px;
     width: 100px;
 }
-
 h2 {
     font-weight: bold;
     font-family: "Saturday Nights";
@@ -30,12 +27,10 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h3 {
-    color: #BB6688;
+h4 {
+    color: white;
 }
-.dropdown-toggle {
-    font-weight: bold;
-}
+
 .dropdown-menu {
     background-color: purple;
 }
@@ -78,6 +73,9 @@ nav.navbar.navbar-default {
     font-weight: bold;
     background-color: #EC008C;
 }
+.dropdown-toggle {
+    color: white;
+}
 .commander {
     float: right;
     height: 50px;
@@ -96,6 +94,6 @@ nav.navbar.navbar-default {
     font-family: Loma;
     color: darkviolet;
 }
-#logop {
-    background-color: darkred;
+.totalcommande {
+    background-color: white;
 }
