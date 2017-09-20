@@ -1,12 +1,51 @@
-Meteor.subscribe("paniers");
+Meteor.subscribe("panier");
 
-Template.paniers.helpers({
-    paniers: function() {
+Template.panier.helpers({
+    panier: function() {
         return Panier.find();
+    },
+    //on crée une nouvelle fonction pour la totalité des commandes
+    'totalite': function() {
+        //on donne un point de départ qui est de 0
+        totalite = 0;
+        //on lui dit d'afficher le total des produits dès que c'est égal à 1
+        Panier.find({}, {fields:{total:1}}).map(function(doc) {
+            //la totalité des commandes est égale au total des produits
+            totalite += doc.total;
+        });
+        //il retourne ainsi la totalité des commandes
+        return totalite;
     }
 });
+
+//BOUTON SUPPRIMER
+
+Template.panier.events({
+    'click input.remove'(event){
+        event.preventDefault();
+        Panier.remove(this._id);
+},
+});
+
+
+//BOUTON MODIFIER
+/*
+Template.panier.events({
+    'click input.plus'(event) {
+        event.preventDefault();
+        Panier.update(this._id);
+    },
+});
+
+*/
+
+
+
+
+
 Template.boissons.events({
     'submit .formulaire'(event){
+
         event.preventDefault();
         var compteur = $("input[name='compteur']").val();
         Panier.insert({
@@ -18,6 +57,7 @@ Template.boissons.events({
         });
     },
 });
+
 Template.burgers.events({
     'submit .formulaire'(event){
         event.preventDefault();
