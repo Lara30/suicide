@@ -18,28 +18,35 @@ Template.panier.helpers({
     }
 });
 
-//BOUTON SUPPRIMER
 
+
+//BOUTON SUPPRIMER
 Template.panier.events({
     'click input.remove'(event){
         event.preventDefault();
         Panier.remove(this._id);
-},
+        },
 });
+
 
 
 //BOUTON MODIFIER
-/*
 Template.panier.events({
-    'click input.plus'(event) {
+    'click .modif'(event) {
+
         event.preventDefault();
-        Panier.update(this._id);
+        var compteur = $("."+this._id+"").val();
+
+        Panier.update(this._id, {
+            name:this.name,
+            price:this.price,
+            image:this.image,
+            counter:compteur,
+            total:this.price*compteur,
+            _id:this._id
+        });
     },
 });
-
-*/
-
-
 
 
 
@@ -52,7 +59,7 @@ Template.boissons.events({
             name:this.name,
             price:this.price,
             image:this.image,
-            compteur:compteur,
+            counter:compteur,
             total:this.price*compteur
         });
     },
@@ -66,7 +73,7 @@ Template.burgers.events({
             name:this.name,
             price:this.price,
             image:this.image,
-            compteur:compteur,
+            counter:compteur,
             total:this.price*compteur
         });
     },
@@ -79,7 +86,7 @@ Template.desserts.events({
             name:this.name,
             price:this.price,
             image:this.image,
-            compteur:compteur,
+            counter:compteur,
             total:this.price*compteur
         });
     },
@@ -92,7 +99,7 @@ Template.pizzas.events({
             name:this.name,
             price:this.price,
             image:this.image,
-            compteur:compteur,
+            counter:compteur,
             total:this.price*compteur
         });
     },
@@ -105,7 +112,7 @@ Template.salades.events({
             name:this.name,
             price:this.price,
             image:this.image,
-            compteur:compteur,
+            counter:compteur,
             total:this.price*compteur
         });
     },
