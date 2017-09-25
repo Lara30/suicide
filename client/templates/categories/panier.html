@@ -1,29 +1,29 @@
 <template name="panier">
-<form class="totalcommande">
     <div class="content">
         <h2>Votre commande</h2>
         <h3>Total de votre commande : {{totalite}}€ </h3>
 
-        <ul>
+        <form class="validercommande">
             {{#each panier}}
-            <li id="affichage">{{compteur}} {{name}} à {{price}}€ = {{total}} €
+            <li id="affichage">{{counter}} {{name}} à {{price}}€ = {{total}} €
                 <img class="imagefood" src="/{{image}}">
             </li>
-            <input class="remove" name="delete" type="submit" value="supprimer">
+            <div class="boutons">
+                <p>Modifier la quantité :
+                <input class="modif {{_id}}" name="inputcompteur" type="number" min=0 max=7 value={{counter}}>
+                </p>
+                <p>Supprimer
+                    <input class="remove" name="supprimer" type="submit" value="ok">
+                </p>
 
-            <input class="modif {{_id}}" name="compteur" type="number" min=0 max=7 value={{compteur}}>
-
-         <!--   <li id="test">{{compteur}} {{price}} = {{total}} €
-                <div class="modifier">
-            <input class="plus" type="submit" value="+">
-            <input class="moins" type="submit" value="-">
-                </div>
-            </li>-->
+                <a class="envoyer" href=""><input type="submit" name="valider" value="valider la commande"></a>
+            </div>
             {{/each}}
-        </ul>
+            <p>Total = {{totalite}}</p>
+            <!--<input class="commander" type="submit" name="commander" value="valider la commande">-->
+            <a class="retour" href="{{pathFor 'categorie'}}">
+        <!--<input type="submit" name="accueil" value="Accueil">-->
+            </a>
+        </form>
     </div>
-    <a class="retour" href="{{pathFor 'categorie'}}">
-        <input type="submit" name="accueil" value="Accueil">
-    </a>
-</form>
 </template>

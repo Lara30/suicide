@@ -16,3 +16,9 @@ Meteor.publish('salades', function() {
 Meteor.publish('desserts', function() {
     return Desserts.find();
 });
+
+
+// pour passer en local
+Meteor.publish('cmdval', function() {
+    return Cmdval.find();
+});

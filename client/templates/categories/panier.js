@@ -18,6 +18,10 @@ Template.panier.helpers({
     }
 });
 
+//essayer de retrouver dans la nav le montant du panier total et le nombre de produits
+
+
+
 
 
 //BOUTON SUPPRIMER
@@ -54,7 +58,7 @@ Template.boissons.events({
     'submit .formulaire'(event){
 
         event.preventDefault();
-        var compteur = $("input[name='compteur']").val();
+        var compteur = $("input[name='inputcompteur']").val();
         Panier.insert({
             name:this.name,
             price:this.price,
@@ -68,7 +72,7 @@ Template.boissons.events({
 Template.burgers.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        var compteur = $("input[name='compteur']").val();
+        var compteur = $("input[name='inputcompteur']").val();
         Panier.insert({
             name:this.name,
             price:this.price,
@@ -81,7 +85,7 @@ Template.burgers.events({
 Template.desserts.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        var compteur = $("input[name='compteur']").val();
+        var compteur = $("input[name='inputcompteur']").val();
         Panier.insert({
             name:this.name,
             price:this.price,
@@ -94,7 +98,7 @@ Template.desserts.events({
 Template.pizzas.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        var compteur = $("input[name='compteur']").val();
+        var compteur = $("input[name='inputcompteur']").val();
         Panier.insert({
             name:this.name,
             price:this.price,
@@ -107,7 +111,7 @@ Template.pizzas.events({
 Template.salades.events({
     'submit .formulaire'(event){
         event.preventDefault();
-        var compteur = $("input[name='compteur']").val();
+        var compteur = $("input[name='inputcompteur']").val();
         Panier.insert({
             name:this.name,
             price:this.price,
