@@ -1,13 +1,13 @@
 <template name="panier">
-    <div class="content">
-        <h2>Votre commande</h2>
+    <div class="content_panier">
         <h3>Total de votre commande : {{totalite}}€ </h3>
-
         <form class="validercommande">
             {{#each panier}}
-            <li id="affichage">{{counter}} {{name}} à {{price}}€ = {{total}} €
+            <span>
+                {{counter}} {{name}} à {{price}}€ = {{total}} €
                 <img class="imagefood" src="/{{image}}">
-            </li>
+            </span>
+
             <div class="boutons">
                 <p>Modifier la quantité :
                 <input class="modif {{_id}}" name="inputcompteur" type="number" min=0 max=7 value={{counter}}>
@@ -15,15 +15,25 @@
                 <p>Supprimer
                     <input class="remove" name="supprimer" type="submit" value="ok">
                 </p>
-
-                <a class="envoyer" href=""><input type="submit" name="valider" value="valider la commande"></a>
+                <hr>
             </div>
             {{/each}}
-            <p>Total = {{totalite}}</p>
             <!--<input class="commander" type="submit" name="commander" value="valider la commande">-->
-            <a class="retour" href="{{pathFor 'categorie'}}">
-        <!--<input type="submit" name="accueil" value="Accueil">-->
-            </a>
+
         </form>
+        <a class="valider" href="{{pathFor 'categorie'}}">
+            <input type="submit" name="accueil" value="Retour">
+        </a>
+
+        <div class="validation">
+            {{#if currentUser}}
+            <input class="commander" type="submit" name="commander" value="Valider la commande">
+            {{else}}
+            <h3>Veuillez vous connecter!</h3>
+                <a class="valid" href="{{pathFor 'register'}}">
+                    <input type="submit" name="accueil" value="Se Connecter">
+                </a>
+            {{/if}}
+        </div>
     </div>
 </template>

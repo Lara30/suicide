@@ -18,12 +18,6 @@ Template.panier.helpers({
     }
 });
 
-//essayer de retrouver dans la nav le montant du panier total et le nombre de produits
-
-
-
-
-
 //BOUTON SUPPRIMER
 Template.panier.events({
     'click input.remove'(event){
@@ -56,9 +50,14 @@ Template.panier.events({
 
 Template.boissons.events({
     'submit .formulaire'(event){
+       /* if(this.InStock)
+            confirm ("vous avec acheté un" + this.name + "pour" + this.price);
+        else
+            alert("pas en stock");*/
 
         event.preventDefault();
         var compteur = $("input[name='inputcompteur']").val();
+        // var compteur= event.target.inputcompteur.value;
         Panier.insert({
             name:this.name,
             price:this.price,

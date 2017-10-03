@@ -1,6 +1,9 @@
 body {
-    background-color: lightpink;
+    background-color: white;
 }
+
+/*TEMPLATE LAYOUT*/
+
 #logoheader {
     margin: auto;
     height: 100px;
@@ -8,35 +11,124 @@ body {
     text-align: center;
     font-family: "Saturday Nights";
 }
+
+/*TEMPLATE HEADER*/
+
+h4 {
+    color: white;
+}
+nav.navbar.navbar-default {
+    font-weight: bold;
+    background-color: #EC008C;
+}
+
+/*TEMPLATE CATEGORIES*/
+
+.row {
+    background-image: url("thumb-1920-519509.jpg");
+    opacity:0.8;
+}
+.imagefood {
+    height: 100px;
+    width: 100px;
+}
+
+
+/*TEMPLATE PANIER*/
+hr {
+    height: 5px;
+    color: #EC008C;
+    background-color: #EC008C;
+    border: 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: "Saturday Nights";
+    color: black;
+    text-decoration-color: black;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-family: "Saturday Nights";
+    color: #EC008C;
+    text-align: center;
+}
+
+.content_panier {
+    background-image: url("thumb-1920-519509.jpg");
+}
+
+.commander {
+    float: right;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #EC008C;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background: white;
+    border-color: black;
+}
+.retour {
+    font-weight: bold;
+    font-family: "Saturday Nights";
+    color: #EC008C;
+}
+.inputcompt{
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.validercommande {
+    font-weight: bold;
+    font-family: "Saturday Nights";
+    color: black;
+}
+
+.valid {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Saturday Nights";
+    color: black;
+}
+.validation {
+    text-align: center;
+}
+
+
+
+/*TEMPLATE REGISTER*/
+.enregistrement {
+    background-image: url("thumb-1920-519509.jpg");
+
+}
+
+
+
+
+
 .container.text-center {
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
     background-color: white;
 }
-.imagefood {
-    height: 100px;
-    width: 100px;
-}
-h2 {
-    font-weight: bold;
-    font-family: "Saturday Nights";
-    color: blueviolet;
-    text-decoration-color: black;
-    background-color: #865C6C;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-h4 {
-    color: white;
-}
 
 .dropdown-menu {
     background-color: purple;
-}
-.row {
-    background-image: url("thumb-1920-519509.jpg");
-    opacity:0.8;
 }
 
 .btn-primary {
@@ -58,38 +150,11 @@ h4 {
 .pull-left {
     color: #BB6688;
 }
-.inputcompt{
-    width: 80px;
-    height: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    background: red;
-    border: none;
-    border-radius: 5px;
-}
-nav.navbar.navbar-default {
-    font-weight: bold;
-    background-color: #EC008C;
-}
+
 .dropdown-toggle {
     color: white;
 }
-.commander {
-    float: right;
-    height: 50px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: deeppink;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    background: white;
-    border-color: black;
-}
+
 .box{
     font-family: Loma;
     color: darkviolet;
