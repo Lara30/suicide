@@ -1,0 +1,70 @@
+<template name="users">
+    <form class="main form page paiement">
+        <legend>Votre identité : </legend>
+            <ol>
+                <li>
+                    <label class="control-label" for="nom">Nom</label>
+                    <input name="nom" id="nom" type="text" value="" placeholder="Prénom et nom" required autofocus class="form-control"/>
+                </li>
+                <li>
+                    <label class="control-label" for="mail">Email</label>
+                    <input name="mail" id="email" type="email" value="" placeholder="Votre mail" required class="form-control"/>
+                </li>
+                <li>
+                    <label class="control-label" for="tel">Téléphone</label>
+                    <input name="tel" id="tel" type="tel" value="" placeholder="Votre tel" required class="form-control"/>
+
+                </li>
+            </ol>
+        <legend>Adresse de livraison :</legend>
+        <ol>
+            <li>
+                <label class="control-label" for="adresse">Adresse</label>
+                <textarea id=adresse name=adresse rows=5 required class="form-control"></textarea>
+            </li>
+            <li>
+                <label class="control-label" for="cp">Code postal</label>
+                <input name="codepostal" id="codepostal" type="text" required value="" class="form-control"/>
+            </li>
+            <li>
+                <label class="control-label" for="pays">Pays</label>
+                <input name="pays" id="pays" type="text" required value="" class="form-control"/>
+            </li>
+        </ol>
+        <legend>Informations CB :</legend>
+        <ol>
+            <li>
+                <fieldset>
+                    <legend>Type de carte bancaire</legend>
+                    <ol>
+                        <li>
+                            <label for="visa">VISA</label>
+                            <input name="carte" id="visa" type="radio">
+                        </li>
+                        <li>
+                            <label for="amex">AMEX</label>
+                            <input name="carte" id="amex" type="radio">
+                        </li>
+                        <li>
+                            <label for="mastercard">MASTERCARD</label>
+                            <input name="carte" id="mastercard" type="radio">
+                        </li>
+                    </ol>
+                </fieldset>
+            </li>
+            <li>
+                <label class="control-label" for="carte">N° de carte</label>
+                <input name="carte" id="carte" type="number" required value="" class="form-control"/>
+            </li>
+            <li>
+                <label class="control-label" for="code">Code de Sécurité</label>
+                <input name="code" id="code" type="number" required value="" class="form-control"/>
+            </li>
+            <li>
+                <label class="control-label" for="nom_porteur">Nom du porteur</label>
+                <input name="porteur" id="nom_porteur" type="text" placeholder="Même nom que sur la carte" required value="" class="form-control"/>
+            </li>
+        </ol>
+            <input type="submit" value="J'achète!" class="btn btn-primary">
+    </form>
+</template>

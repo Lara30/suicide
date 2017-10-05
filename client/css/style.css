@@ -2,6 +2,12 @@ body {
     background-color: white;
 }
 
+/*LOGINBUTTONS*/
+.dropdown-toggle {
+    color: black;
+    text-align: right;
+}
+
 /*TEMPLATE LAYOUT*/
 
 #logoheader {
@@ -20,6 +26,9 @@ h4 {
 nav.navbar.navbar-default {
     font-weight: bold;
     background-color: #EC008C;
+}
+.test {
+    text-align: right;
 }
 
 /*TEMPLATE CATEGORIES*/
@@ -74,12 +83,18 @@ h3 {
     text-decoration: none;
     background: white;
     border-color: black;
+    border-style: solid;
 }
+.return {
+    text-align: left;
+}
+
 .retour {
     font-weight: bold;
     font-family: "Saturday Nights";
-    color: #EC008C;
+    color: black;
 }
+
 .inputcompt{
     width: 80px;
     height: 30px;
@@ -92,7 +107,11 @@ h3 {
     border-radius: 5px;
 }
 
-.validercommande {
+.validate {
+    text-align: right;
+}
+
+.validercomm {
     font-weight: bold;
     font-family: "Saturday Nights";
     color: black;
@@ -104,18 +123,39 @@ h3 {
     font-family: "Saturday Nights";
     color: black;
 }
-.validation {
-    text-align: center;
-}
 
 
 
 /*TEMPLATE REGISTER*/
 .enregistrement {
     background-image: url("thumb-1920-519509.jpg");
-
 }
 
+
+/*TEMPLATE USERS*/
+.paiement {
+    background-image: url("9287-Have-a-Good-Time-Cafe-Wall-Sticker-Canteen-Living-Room-Background-Wallpaper-Removable-Waterproof-Stickers.jpg");
+   background-size: cover;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+form#paiement legend {
+    color: #384313;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px #c0d576;
+}
+
+form#paiement fieldset fieldset legend {
+    color: #111111;
+    font-size: 13px;
+    font-weight: normal;
+    padding-bottom: 0;
+}
 
 
 
@@ -149,10 +189,6 @@ h3 {
 }
 .pull-left {
     color: #BB6688;
-}
-
-.dropdown-toggle {
-    color: white;
 }
 
 .box{

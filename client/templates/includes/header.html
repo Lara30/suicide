@@ -15,14 +15,26 @@
 
                 <!--les utilisateurs peuvent maintenant s'inscrire et se connecter à l'appli avec un couple
                 email/mot de passe!-->
-                <h4>{{> loginButtons}}</h4>
-
+                <!--<h4>{{> loginButtons}}</h4>-->
+            </span>
+               <!--  <div class="test">
+                     {{#if currentUser}}
+                     <p>You're logged in.</p>
+                     {{else}}
+                     {{> login}}
+                     {{/if}}
+                 </div>-->
                 <!--essai des utilisateurs-->
                 <!--{{> LoginModel}}-->
-
-                <a href="/panier"> <img id="logop" src="./TC_Icons_ShoppingCart_PINK.jpg" width="60" height="60">
-                    <h4>Votre panier :</h4></a>
-            </span>
+                <div class="test">
+                    {{> adminTemplate}}
+                </div>
+                    <h4>{{> loginButtons}}</h4>
+                    <a href="/panier">
+                        <h4>Votre panier :
+                            <img id="logop" src="./TC_Icons_ShoppingCart_PINK.jpg" width="60" height="60"></h4>
+                    </a>
         </div>
     </nav>
+
 </template>

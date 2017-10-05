@@ -7,10 +7,9 @@
                 {{counter}} {{name}} à {{price}}€ = {{total}} €
                 <img class="imagefood" src="/{{image}}">
             </span>
-
             <div class="boutons">
                 <p>Modifier la quantité :
-                <input class="modif {{_id}}" name="inputcompteur" type="number" min=0 max=7 value={{counter}}>
+                    <input class="modif {{_id}}" name="inputcompteur" type="number" min=0 max=7 value={{counter}}>
                 </p>
                 <p>Supprimer
                     <input class="remove" name="supprimer" type="submit" value="ok">
@@ -18,22 +17,25 @@
                 <hr>
             </div>
             {{/each}}
-            <!--<input class="commander" type="submit" name="commander" value="valider la commande">-->
 
-        </form>
-        <a class="valider" href="{{pathFor 'categorie'}}">
-            <input type="submit" name="accueil" value="Retour">
-        </a>
+            <div class="return">
+                <a class="retour" href="{{pathFor 'categorie'}}">
+                    <input type="submit" name="accueil" value="Retour">
+                </a>
+            </div>
 
-        <div class="validation">
+            <div class="validation">
             {{#if currentUser}}
-            <input class="commander" type="submit" name="commander" value="Valider la commande">
+                <a class="user" href="{{pathFor 'users'}}">
+                    <input class="commander" type="submit" name="commander" value="Valider la commande">
+                </a>
             {{else}}
             <h3>Veuillez vous connecter!</h3>
-                <a class="valid" href="{{pathFor 'register'}}">
+                <a class="valid" href="{{pathFor 'categorie'}}">
                     <input type="submit" name="accueil" value="Se Connecter">
                 </a>
             {{/if}}
         </div>
+        </form>
     </div>
 </template>
