@@ -1,8 +1,14 @@
 <template name="adminTemplate">
     {{#if isAdminUser}}
-    bienvenue admin
+    <h3>Bienvenue admin</h3>
+
+<form class="test">
+<a class="modifadmin" href="{{pathFor 'modifadmin'}}">
+    <input class="modifadmin" type="submit" name="modifadmin" value="modifier la valeur">
+</a>
+</form>
 
     {{else}}
-    Bienvenue user!
+    <h3>Bienvenue user!</h3>
     {{/if}}
 </template>
